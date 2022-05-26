@@ -226,6 +226,7 @@ module.exports = ({
 
     const start = async onCrash => {
       logger.info('Starting', { groupId })
+      console.log({myGroupId: groupId})
       runner = createRunner({
         autoCommit,
         eachBatchAutoResolve,
